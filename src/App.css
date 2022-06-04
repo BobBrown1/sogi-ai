@@ -1,38 +1,211 @@
-.App {
+@font-face {
+  font-family: gilbert-color;
+  src: url(./fonts/Glibert-Color.otf);
+}
+
+@font-face {
+  font-family: gilbert-bold;
+  src: url(./fonts/Gilbert-Bold.otf);
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animation {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+header {
+  font-family: gilbert-color;
+}
+
+header h3 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+header input[type="text"] {
+  padding: 8px 6px;
+  width: 30%;
+  border: 1.5px solid black;
+  border-radius: 6px;
+  outline: none;
+}
+
+@media screen and (max-width: 500px) {
+  header input[type="text"] {
+    width: 50%
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.info {
+  margin-top: 30px;
+  background-color: rgb(203, 216, 244);
+  border-left: 5px solid rgb(69, 69, 239);
+  padding: 6px 10px 6px 5px;
+  display: none;
+}
+
+.info p{
+  font-size: 20px;
+}
+
+.closebtn {
   color: white;
+  float: right;
+  font-size: 45px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.closebtn:hover {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.data-button {
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  margin: 15px;
+}
+
+.data-button:hover {
+  color: #d60270;
+}
+
+@media screen and (max-width: 550px) {
+  #sexuality-pathway {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  #gender-pathway {
+    font-size: 20px;
   }
+}
+
+::placeholder {
+  font-family: gilbert-bold;
+}
+
+p {
+  font-size: 25px;
+  font-family: gilbert-bold
+}
+
+button {
+  border: 1.5px solid black;
+  border-radius: 6px;
+  padding: 8px 20px;
+  margin: 5px;
+  background-color: white;
+  font-family: gilbert-bold;
+  color: black;
+  transition: all 200ms;
+}
+
+button:hover:not(.data-button):not(:disabled) {
+  box-shadow: 3px 3px 5px grey;
+}
+
+.intro-button {
+  padding: 16px 36px;
+  font-size: 20px;
+}
+
+.path-button {
+  padding: 56px 36px;
+  font-size: 40px;
+  margin: 30px 20px;
+  width: 50%;
+}
+
+#sexuality-pathway {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(./images/PrideFlag.png)
+}
+
+#gender-pathway {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Transgender_Pride_flag.svg)
+}
+
+.progress {
+  color: green;
+}
+
+.button-group button {
+  padding: 20px 34px; 
+  cursor: pointer; 
+  font-size: 40px;
+  margin-top:20px;
+}
+
+.button-group button:not(:last-child) {
+  margin-right: 20px;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.option-group button {
+  padding: 20px 34px; 
+  cursor: pointer; 
+  font-size: 40px;
+  flex: 1 0 15%;
+  margin-top:20px;
+}
+
+#quiz-header {
+  display: none;
+}
+#quiz-number {
+  display: none;
+}
+
+#test-header {
+  display: none;
+}
+#test-number {
+  display: none;
+}
+
+@media screen and (max-width:485px) {
+  .option-group button {
+    font-size: 20px;
+    padding: 10px 24px; 
+  }
+}
+
+.result-header {
+  font-size: "35px"; 
+  margin-bottom: "-2px"
+}
+
+a {
+  color: #d60270;
+}
+
+.resource {
+  max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
 }
