@@ -4,7 +4,7 @@
 
 # SOGI AI
 
-**SOGI AI** is a single-page web application made with [React.js](https://reactjs.org). Development is currently in progress and results may not always be accurate. 
+**SOGI AI** is a single-page web application made with [React.js](https://reactjs.org). Development is currently in progress and results may not always be accurate. You can view the live site at [sogi-ai.web.app](https://sogi-ai.web.app).
 
 # About
 
