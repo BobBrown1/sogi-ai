@@ -90,6 +90,26 @@ header input[type="text"] {
   color: #d60270;
 }
 
+.learn-button:not(:last-child) { 
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(./images/PrideFlag.png) 
+}
+
+.learn-button {
+  width: 300px;
+  height: 100px;
+  font-size: 20px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Transgender_Pride_flag.svg)
+}
+
+@media screen and (max-width: 375px) {
+  .learn-button {
+    width: 230px;
+    height: 75px;
+    font-size: 15px;
+  }
+}
+
+
 @media screen and (max-width: 550px) {
   #sexuality-pathway {
     font-size: 20px;

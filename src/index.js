@@ -6,7 +6,9 @@ import {Intro, Footer} from './App';
 import Questions from './Questions';
 import {Result, GenderResult} from './Questions';
 import results0 from './AI';
-import {results1} from './AI';
+import results1 from './GenderAI';
+import LearnSexualities from './Learn';
+import {LearnGender} from './Learn'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -58,6 +60,19 @@ export function previous(username, goTo, info) {
       <Questions user={username} page={goTo} info={info}/>
     </React.StrictMode>
   )
+}
+
+export function learn(username, info, part, previous) {
+  if (part === 0) {
+    root.render (
+      <LearnSexualities user={username} info={info} previous={previous} />
+    );
+  }
+  if (part === 1) {
+    root.render (
+      <LearnGender user={username} info={info} previous={previous} />
+    );
+  }
 }
 
 export function questions(username, page, info) {

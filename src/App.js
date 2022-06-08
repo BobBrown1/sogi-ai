@@ -17,6 +17,12 @@ function App() {
            <p>SOGI AI will never store <u>any</u> information it is given. Your nickname and answers will be immediately erased if you close the page, refresh the page, or press "Return Home" button on any page.</p>
           </div>
           <button className="data-button" onClick={() => document.getElementById("info").style.display="block"}>Is my data stored?</button>
+          <br />
+          <br />
+          <div style={{textAlign:"center"}}>
+            <button className="learn-button" onClick={() => index.learn("User", {}, 0, -1)}>Learn about sexualities</button>
+            <button className="learn-button" onClick={() => index.learn("User", {}, 1, -1)}>Learn about gender identities</button>
+          </div>
       </header>
     </div>
   );

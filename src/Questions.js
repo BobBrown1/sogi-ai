@@ -6,7 +6,9 @@ import {useEffect} from 'react';
 function Questions(props) {
     const pageNum = props.page;
 
-    if (pageNum === 1) {
+    if (pageNum === -1) {
+        index.home()
+    } else if (pageNum === 1) {
         return <Question1 user={props.user} info={props.info} />
     } else if (pageNum === 2) {
         return <Question2 user={props.user} info={props.info} />
