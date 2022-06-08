@@ -72,36 +72,36 @@ export default function results1(info) {
 export function resultDesc(result, stats) {
     var description, resources;
     if (result === "comfortable") {
-        description = "You understand your sexuality and don't mind talking about it. You accept yourself for who you are.";
+        description = "You understand your gender identity and don't mind talking about it. You accept yourself for who you are.";
         resources = (
-            <p className="resource">Being comfortable with your sexuality is great! It is what most people want long-term with their identity.
+            <p className="resource">Being comfortable with your gender identity is great! It is what most people want long-term with their identity.
             </p>
         )
     } else if (result === "questioning") {
-        description = "You are still figuring out what your sexuality is. Don't worry, it takes time!"
+        description = "You are still figuring out what your gender identity is. Don't worry, it takes time!"
     } else if (result === "closeted") {
-        description = "You know what your sexuality is, but you haven't told many people, if not anyone."
+        description = "You know what your gender identity is, but you haven't told many people, if not anyone."
         resources = (
                 <p className="resource">There are many resources about coming out, online and in-person! <a href="https://www.thetrevorproject.org/resources/guide/the-coming-out-handbook/">The Coming Out Handbook - The Trevor Project</a> is a great
                 page to check out. <a href="https://www.glsen.org/activity/coming-out-resource-lgbtq-students">Coming Out: A resource for LGBTQ Students - GLSEN.org</a> and <a href="https://cejce.berkeley.edu/geneq/resources/lgbtq-resources/coming-out">Coming Out - UC Berkeley</a> are some more great resources.
                 </p>
         )
     } else if (result === "questioning&comfortable") {
-        description = "You are still figuring out what your sexuality is, but you don't mind telling others.";
+        description = "You are still figuring out what your gender identity is, but you don't mind telling others.";
         resources = (
-            <p className="resource">It is important that you are comfortable with telling others about your sexuality and how you feel about it. You can take advice from others to help you learn more about yourself.
+            <p className="resource">It is important that you are comfortable with telling others about your gender identity and how you feel about it. You can take advice from others to help you learn more about yourself.
             </p>
         )
     } else if (result === "questioning&closeted") {
-        description = "You are still figuring out what your sexuality is, and you haven't told many people, if not anyone.";
+        description = "You are still figuring out what your gender identity is, and you haven't told many people, if not anyone.";
         resources = (
             <p className="resource">It's okay to be both questioning and closeted! It just means that you need more time to learn more about yourself and become comfortable with who you are.
             </p>
         )
     } else if (result === "closeted&comfortable") {
-        description = "You have figured out what your sexuality is, but you haven't told many people, if not anyone."
+        description = "You have figured out what your gender identity is, but you haven't told many people, if not anyone."
         resources = (
-            <p className="resource">It is important that you have figured out your sexuality. Once you begin to feel comfortable with who you are, you'll feel better about telling others!
+            <p className="resource">It is important that you have figured out your gender identity. Once you begin to feel comfortable with who you are, you'll feel better about telling others!
             </p>
         )
     } 
